@@ -1,0 +1,699 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\verizon>cd..
+
+C:\Users>cd..
+
+C:\>cd Akash
+
+C:\Akash>cd mydqlScripts
+The system cannot find the path specified.
+
+C:\Akash>mysqlScripts
+'mysqlScripts' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Akash>cd mysqlScripts
+
+C:\Akash\mysqlScripts>mysql -u root -p vb1n3db < emp_dept.sql
+Enter password: *****
+
+C:\Akash\mysqlScripts>mysql -u root -p vb1n3db < emp_dept.sql
+Enter password: *****
+
+C:\Akash\mysqlScripts>mysql -u root -p vb1n3db
+Enter password: *****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 5.7.21-log MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> select * from emp;
++-------+--------+-----------+------+------------+------+------+--------+
+| empno | ename  | job       | mgr  | hiredate   | sal  | comm | deptno |
++-------+--------+-----------+------+------------+------+------+--------+
+|  7369 | SMITH  | CLERK     | 7902 | 1980-12-17 |  800 | NULL |     20 |
+|  7499 | ALLEN  | SALESMAN  | 7698 | 1981-02-20 | 1600 |  300 |     30 |
+|  7521 | WARD   | SALESMAN  | 7698 | 1981-02-22 | 1250 |  500 |     30 |
+|  7566 | JONES  | MANAGER   | 7839 | 1981-04-02 | 2975 | NULL |     20 |
+|  7654 | MARTIN | SALESMAN  | 7698 | 1981-09-28 | 1250 | 1400 |     30 |
+|  7698 | BLAKE  | MANAGER   | 7839 | 1981-07-01 | 2850 | NULL |     30 |
+|  7782 | CLARK  | MANAGER   | 7839 | 1981-07-09 | 2450 | NULL |     10 |
+|  7788 | SCOTT  | ANALYST   | 7566 | 1987-07-13 | 3000 | NULL |     20 |
+|  7839 | KING   | PRESIDENT | NULL | 1981-10-17 | 5000 | NULL |     10 |
+|  7844 | TURNER | SALESMAN  | 7698 | 1981-09-08 | 1500 |    0 |     30 |
+|  7876 | ADAMS  | CLERK     | 7788 | 1987-07-13 | 1100 | NULL |     20 |
+|  7900 | JAMES  | CLERK     | 7698 | 1981-12-03 |  950 | NULL |     30 |
+|  7902 | FORD   | ANALYST   | 7566 | 1981-12-03 | 3000 | NULL |     20 |
+|  7934 | MILLER | CLERK     | 7782 | 1982-01-23 | 1300 | NULL |     10 |
++-------+--------+-----------+------+------------+------+------+--------+
+14 rows in set (0.01 sec)
+
+mysql> select sal, comm, sal+coalesce(comm,0) from emp;
++------+------+----------------------+
+| sal  | comm | sal+coalesce(comm,0) |
++------+------+----------------------+
+|  800 | NULL |                  800 |
+| 1600 |  300 |                 1900 |
+| 1250 |  500 |                 1750 |
+| 2975 | NULL |                 2975 |
+| 1250 | 1400 |                 2650 |
+| 2850 | NULL |                 2850 |
+| 2450 | NULL |                 2450 |
+| 3000 | NULL |                 3000 |
+| 5000 | NULL |                 5000 |
+| 1500 |    0 |                 1500 |
+| 1100 | NULL |                 1100 |
+|  950 | NULL |                  950 |
+| 3000 | NULL |                 3000 |
+| 1300 | NULL |                 1300 |
++------+------+----------------------+
+14 rows in set (0.01 sec)
+
+mysql> select * from emp limit 0,3;
++-------+-------+----------+------+------------+------+------+--------+
+| empno | ename | job      | mgr  | hiredate   | sal  | comm | deptno |
++-------+-------+----------+------+------------+------+------+--------+
+|  7369 | SMITH | CLERK    | 7902 | 1980-12-17 |  800 | NULL |     20 |
+|  7499 | ALLEN | SALESMAN | 7698 | 1981-02-20 | 1600 |  300 |     30 |
+|  7521 | WARD  | SALESMAN | 7698 | 1981-02-22 | 1250 |  500 |     30 |
++-------+-------+----------+------+------------+------+------+--------+
+3 rows in set (0.00 sec)
+
+mysql>
+
+
+
+
+
+
+
+C:\Users\verizon>cd..
+
+C:\Users>cd..
+
+C:\>cd Akash
+
+C:\Akash>cd mydqlScripts
+The system cannot find the path specified.
+
+C:\Akash>mysqlScripts
+'mysqlScripts' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Akash>cd mysqlScripts
+
+C:\Akash\mysqlScripts>mysql -u root -p vb1n3db < emp_dept.sql
+Enter password: *****
+
+C:\Akash\mysqlScripts>mysql -u root -p vb1n3db < emp_dept.sql
+Enter password: *****
+
+C:\Akash\mysqlScripts>mysql -u root -p vb1n3db
+Enter password: *****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 5.7.21-log MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> select * from emp;
++-------+--------+-----------+------+------------+------+------+--------+
+| empno | ename  | job       | mgr  | hiredate   | sal  | comm | deptno |
++-------+--------+-----------+------+------------+------+------+--------+
+|  7369 | SMITH  | CLERK     | 7902 | 1980-12-17 |  800 | NULL |     20 |
+|  7499 | ALLEN  | SALESMAN  | 7698 | 1981-02-20 | 1600 |  300 |     30 |
+|  7521 | WARD   | SALESMAN  | 7698 | 1981-02-22 | 1250 |  500 |     30 |
+|  7566 | JONES  | MANAGER   | 7839 | 1981-04-02 | 2975 | NULL |     20 |
+|  7654 | MARTIN | SALESMAN  | 7698 | 1981-09-28 | 1250 | 1400 |     30 |
+|  7698 | BLAKE  | MANAGER   | 7839 | 1981-07-01 | 2850 | NULL |     30 |
+|  7782 | CLARK  | MANAGER   | 7839 | 1981-07-09 | 2450 | NULL |     10 |
+|  7788 | SCOTT  | ANALYST   | 7566 | 1987-07-13 | 3000 | NULL |     20 |
+|  7839 | KING   | PRESIDENT | NULL | 1981-10-17 | 5000 | NULL |     10 |
+|  7844 | TURNER | SALESMAN  | 7698 | 1981-09-08 | 1500 |    0 |     30 |
+|  7876 | ADAMS  | CLERK     | 7788 | 1987-07-13 | 1100 | NULL |     20 |
+|  7900 | JAMES  | CLERK     | 7698 | 1981-12-03 |  950 | NULL |     30 |
+|  7902 | FORD   | ANALYST   | 7566 | 1981-12-03 | 3000 | NULL |     20 |
+|  7934 | MILLER | CLERK     | 7782 | 1982-01-23 | 1300 | NULL |     10 |
++-------+--------+-----------+------+------------+------+------+--------+
+14 rows in set (0.01 sec)
+
+mysql> select sal, comm, sal+coalesce(comm,0) from emp;
++------+------+----------------------+
+| sal  | comm | sal+coalesce(comm,0) |
++------+------+----------------------+
+|  800 | NULL |                  800 |
+| 1600 |  300 |                 1900 |
+| 1250 |  500 |                 1750 |
+| 2975 | NULL |                 2975 |
+| 1250 | 1400 |                 2650 |
+| 2850 | NULL |                 2850 |
+| 2450 | NULL |                 2450 |
+| 3000 | NULL |                 3000 |
+| 5000 | NULL |                 5000 |
+| 1500 |    0 |                 1500 |
+| 1100 | NULL |                 1100 |
+|  950 | NULL |                  950 |
+| 3000 | NULL |                 3000 |
+| 1300 | NULL |                 1300 |
++------+------+----------------------+
+14 rows in set (0.01 sec)
+
+mysql> select * from emp limit 0,3;
++-------+-------+----------+------+------------+------+------+--------+
+| empno | ename | job      | mgr  | hiredate   | sal  | comm | deptno |
++-------+-------+----------+------+------------+------+------+--------+
+|  7369 | SMITH | CLERK    | 7902 | 1980-12-17 |  800 | NULL |     20 |
+|  7499 | ALLEN | SALESMAN | 7698 | 1981-02-20 | 1600 |  300 |     30 |
+|  7521 | WARD  | SALESMAN | 7698 | 1981-02-22 | 1250 |  500 |     30 |
++-------+-------+----------+------+------------+------+------+--------+
+3 rows in set (0.00 sec)
+
+mysql> select * from emp limit 5,1;
++-------+-------+---------+------+------------+------+------+--------+
+| empno | ename | job     | mgr  | hiredate   | sal  | comm | deptno |
++-------+-------+---------+------+------------+------+------+--------+
+|  7698 | BLAKE | MANAGER | 7839 | 1981-07-01 | 2850 | NULL |     30 |
++-------+-------+---------+------+------------+------+------+--------+
+1 row in set (0.00 sec)
+
+mysql> select * from emp order by sal desc limit 0,1;
++-------+-------+-----------+------+------------+------+------+--------+
+| empno | ename | job       | mgr  | hiredate   | sal  | comm | deptno |
++-------+-------+-----------+------+------------+------+------+--------+
+|  7839 | KING  | PRESIDENT | NULL | 1981-10-17 | 5000 | NULL |     10 |
++-------+-------+-----------+------+------------+------+------+--------+
+1 row in set (0.01 sec)
+
+mysql> select * from emp order by sal desc limit 1,1;
++-------+-------+---------+------+------------+------+------+--------+
+| empno | ename | job     | mgr  | hiredate   | sal  | comm | deptno |
++-------+-------+---------+------+------------+------+------+--------+
+|  7788 | SCOTT | ANALYST | 7566 | 1987-07-13 | 3000 | NULL |     20 |
++-------+-------+---------+------+------------+------+------+--------+
+1 row in set (0.00 sec)
+
+mysql> select * from emp order by hiredate limit 0,1;
++-------+-------+-------+------+------------+------+------+--------+
+| empno | ename | job   | mgr  | hiredate   | sal  | comm | deptno |
++-------+-------+-------+------+------------+------+------+--------+
+|  7369 | SMITH | CLERK | 7902 | 1980-12-17 |  800 | NULL |     20 |
++-------+-------+-------+------+------------+------+------+--------+
+1 row in set (0.00 sec)
+
+mysql> select min(hiredate) from emp where deptno=10;
++---------------+
+| min(hiredate) |
++---------------+
+| 1981-07-09    |
++---------------+
+1 row in set (0.05 sec)
+
+mysql> select e.ename, d.dname
+    -> freom emp e inner join dept d on e.deptno=d.deptno
+    -> where hiredate = (select min(hiredate) from emp e1 where e1.deptno=e.dept
+no);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that
+corresponds to your MySQL server version for the right syntax to use near 'emp e
+ inner join dept d on e.deptno=d.deptno
+where hiredate = (select min(hireda' at line 2
+mysql> select e.ename, d.dname
+    -> from emp e inner join dept d on e.deptno=d.deptno
+    -> where hiredate = (select min(hiredate) from emp e1 where e1.deptno=e.dept
+no)
+    -> ;
++-------+------------+
+| ename | dname      |
++-------+------------+
+| CLARK | ACCOUNTING |
+| SMITH | RESEARCH   |
+| ALLEN | SALES      |
++-------+------------+
+3 rows in set (0.02 sec)
+
+mysql> select * from emp;
++-------+--------+-----------+------+------------+------+------+--------+
+| empno | ename  | job       | mgr  | hiredate   | sal  | comm | deptno |
++-------+--------+-----------+------+------------+------+------+--------+
+|  7369 | SMITH  | CLERK     | 7902 | 1980-12-17 |  800 | NULL |     20 |
+|  7499 | ALLEN  | SALESMAN  | 7698 | 1981-02-20 | 1600 |  300 |     30 |
+|  7521 | WARD   | SALESMAN  | 7698 | 1981-02-22 | 1250 |  500 |     30 |
+|  7566 | JONES  | MANAGER   | 7839 | 1981-04-02 | 2975 | NULL |     20 |
+|  7654 | MARTIN | SALESMAN  | 7698 | 1981-09-28 | 1250 | 1400 |     30 |
+|  7698 | BLAKE  | MANAGER   | 7839 | 1981-07-01 | 2850 | NULL |     30 |
+|  7782 | CLARK  | MANAGER   | 7839 | 1981-07-09 | 2450 | NULL |     10 |
+|  7788 | SCOTT  | ANALYST   | 7566 | 1987-07-13 | 3000 | NULL |     20 |
+|  7839 | KING   | PRESIDENT | NULL | 1981-10-17 | 5000 | NULL |     10 |
+|  7844 | TURNER | SALESMAN  | 7698 | 1981-09-08 | 1500 |    0 |     30 |
+|  7876 | ADAMS  | CLERK     | 7788 | 1987-07-13 | 1100 | NULL |     20 |
+|  7900 | JAMES  | CLERK     | 7698 | 1981-12-03 |  950 | NULL |     30 |
+|  7902 | FORD   | ANALYST   | 7566 | 1981-12-03 | 3000 | NULL |     20 |
+|  7934 | MILLER | CLERK     | 7782 | 1982-01-23 | 1300 | NULL |     10 |
++-------+--------+-----------+------+------------+------+------+--------+
+14 rows in set (0.00 sec)
+
+mysql> select ename, job
+    -> from emp e where hiredate = (select min(hiredate) from emp e1 where e1.jo
+b=e.job);
++-------+-----------+
+| ename | job       |
++-------+-----------+
+| SMITH | CLERK     |
+| ALLEN | SALESMAN  |
+| JONES | MANAGER   |
+| KING  | PRESIDENT |
+| FORD  | ANALYST   |
++-------+-----------+
+5 rows in set (0.00 sec)
+
+mysql> select job, count(*)
+    -> from emp
+    -> where comm is null
+    -> group by job;
++-----------+----------+
+| job       | count(*) |
++-----------+----------+
+| ANALYST   |        2 |
+| CLERK     |        4 |
+| MANAGER   |        3 |
+| PRESIDENT |        1 |
++-----------+----------+
+4 rows in set (0.01 sec)
+
+mysql> select ename, job
+    -> from emp
+    -> where job='PRESIDENT' or job='MANAGER' or job='ANALYST';
++-------+-----------+
+| ename | job       |
++-------+-----------+
+| JONES | MANAGER   |
+| BLAKE | MANAGER   |
+| CLARK | MANAGER   |
+| SCOTT | ANALYST   |
+| KING  | PRESIDENT |
+| FORD  | ANALYST   |
++-------+-----------+
+6 rows in set (0.00 sec)
+
+mysql> select ename, job
+    -> from emp
+    -> where job in ('PRESIDENT','MANAGER','ANALYST');
++-------+-----------+
+| ename | job       |
++-------+-----------+
+| JONES | MANAGER   |
+| BLAKE | MANAGER   |
+| CLARK | MANAGER   |
+| SCOTT | ANALYST   |
+| KING  | PRESIDENT |
+| FORD  | ANALYST   |
++-------+-----------+
+6 rows in set (0.00 sec)
+
+mysql> set autocommit=off
+    -> ;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> \q
+Bye
+
+C:\Akash\mysqlScripts>mysql -u root -p vb1n3db
+Enter password: *****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 9
+Server version: 5.7.21-log MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> set autocommit=off;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> create table TestTab
+    -> (testid int primary key, testnm varchar(20) not null);
+Query OK, 0 rows affected (0.30 sec)
+
+mysql> insert into TestTab
+    -> vales(101,'test1');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that
+corresponds to your MySQL server version for the right syntax to use near 'vales
+(101,'test1')' at line 2
+mysql> insert into TestTab
+    -> values(101,'test1');
+Query OK, 1 row affected (0.02 sec)
+
+mysql> select * from testtab;
++--------+--------+
+| testid | testnm |
++--------+--------+
+|    101 | test1  |
++--------+--------+
+1 row in set (0.00 sec)
+
+mysql> commit;
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> create user testuser identified by 'testpwd';
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> grant select on vb1n3db.* to 'testuser'@'%';
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> grant insert on vb1n3db.* to 'testuse'@'%';
+ERROR 1133 (42000): Can't find any matching row in the user table
+mysql> grant insert on vb1n3db.* to 'testuser'@'%';
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> grant insert on vb1n3db.* to 'testuser'@'localhost';
+ERROR 1133 (42000): Can't find any matching row in the user table
+mysql> grant insert on vb1n3db.testtab to 'testuser'@'%';
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> revoke insert on vb1n3db.testtab from 'testuser'@'%';
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> drop user testuser;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql>
+
+
+
+
+
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\verizon>mysql -u root -p
+Enter password: *****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 10
+Server version: 5.7.21-log MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show tables;
+ERROR 1046 (3D000): No database selected
+mysql> use vb1n3db;
+Database changed
+mysql> show tables;
++-------------------+
+| Tables_in_vb1n3db |
++-------------------+
+| dept              |
+| emp               |
+| employee          |
+| testtab           |
++-------------------+
+4 rows in set (0.00 sec)
+
+mysql> select * from testtab;
+Empty set (0.00 sec)
+
+mysql> select * from testtab;
++--------+--------+
+| testid | testnm |
++--------+--------+
+|    101 | test1  |
++--------+--------+
+1 row in set (0.00 sec)
+
+mysql> \q;
+Bye
+
+C:\Users\verizon>mysql -u testuser -p
+Enter password: *******
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 11
+Server version: 5.7.21-log MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> use vb1n3db;
+ERROR 1044 (42000): Access denied for user 'testuser'@'%' to database 'vb1n3db'
+mysql> use vb1n3db;
+Database changed
+mysql> select * from testtab;
++--------+--------+
+| testid | testnm |
++--------+--------+
+|    101 | test1  |
++--------+--------+
+1 row in set (0.00 sec)
+
+mysql> insert into testtab
+    -> value(102,'Hello');
+ERROR 1142 (42000): INSERT command denied to user 'testuser'@'localhost' for tab
+le 'testtab'
+mysql> insert into testtab
+    -> value(102,'Hello');
+ERROR 1142 (42000): INSERT command denied to user 'testuser'@'localhost' for tab
+le 'testtab'
+mysql> insert into testtab
+    -> value(102,'Hello');
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into testtab
+    -> value(102,'Hello');
+ERROR 1142 (42000): INSERT command denied to user 'testuser'@'localhost' for tab
+le 'testtab'
+mysql> \q
+Bye
+
+C:\Users\verizon>mysql -u testuser -p
+Enter password: *******
+ERROR 1045 (28000): Access denied for user 'testuser'@'localhost' (using passwor
+d: YES)
+
+C:\Users\verizon>
+
+
+
+
+
+
+
+
+BACKUP 
+
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\verizon>mysql -u root -p
+Enter password: *****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 10
+Server version: 5.7.21-log MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show tables;
+ERROR 1046 (3D000): No database selected
+mysql> use vb1n3db;
+Database changed
+mysql> show tables;
++-------------------+
+| Tables_in_vb1n3db |
++-------------------+
+| dept              |
+| emp               |
+| employee          |
+| testtab           |
++-------------------+
+4 rows in set (0.00 sec)
+
+mysql> select * from testtab;
+Empty set (0.00 sec)
+
+mysql> select * from testtab;
++--------+--------+
+| testid | testnm |
++--------+--------+
+|    101 | test1  |
++--------+--------+
+1 row in set (0.00 sec)
+
+mysql> \q;
+Bye
+
+C:\Users\verizon>mysql -u testuser -p
+Enter password: *******
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 11
+Server version: 5.7.21-log MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> use vb1n3db;
+ERROR 1044 (42000): Access denied for user 'testuser'@'%' to database 'vb1n3db'
+mysql> use vb1n3db;
+Database changed
+mysql> select * from testtab;
++--------+--------+
+| testid | testnm |
++--------+--------+
+|    101 | test1  |
++--------+--------+
+1 row in set (0.00 sec)
+
+mysql> insert into testtab
+    -> value(102,'Hello');
+ERROR 1142 (42000): INSERT command denied to user 'testuser'@'localhost' for tab
+le 'testtab'
+mysql> insert into testtab
+    -> value(102,'Hello');
+ERROR 1142 (42000): INSERT command denied to user 'testuser'@'localhost' for tab
+le 'testtab'
+mysql> insert into testtab
+    -> value(102,'Hello');
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into testtab
+    -> value(102,'Hello');
+ERROR 1142 (42000): INSERT command denied to user 'testuser'@'localhost' for tab
+le 'testtab'
+mysql> \q
+Bye
+
+C:\Users\verizon>mysql -u testuser -p
+Enter password: *******
+ERROR 1045 (28000): Access denied for user 'testuser'@'localhost' (using passwor
+d: YES)
+
+C:\Users\verizon>mysql -u root -p
+Enter password: *****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 20
+Server version: 5.7.21-log MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> select * from emp;
+ERROR 1046 (3D000): No database selected
+mysql> use vb1n3db;
+Database changed
+mysql> select * from emp;
++-------+--------+-----------+------+------------+------+------+--------+
+| empno | ename  | job       | mgr  | hiredate   | sal  | comm | deptno |
++-------+--------+-----------+------+------------+------+------+--------+
+|  7369 | SMITH  | CLERK     | 7902 | 1980-12-17 |  800 | NULL |     20 |
+|  7499 | ALLEN  | SALESMAN  | 7698 | 1981-02-20 | 1600 |  300 |     30 |
+|  7521 | WARD   | SALESMAN  | 7698 | 1981-02-22 | 1250 |  500 |     30 |
+|  7566 | JONES  | MANAGER   | 7839 | 1981-04-02 | 2975 | NULL |     20 |
+|  7654 | MARTIN | SALESMAN  | 7698 | 1981-09-28 | 1250 | 1400 |     30 |
+|  7698 | BLAKE  | MANAGER   | 7839 | 1981-07-01 | 2850 | NULL |     30 |
+|  7782 | CLARK  | MANAGER   | 7839 | 1981-07-09 | 2450 | NULL |     10 |
+|  7788 | SCOTT  | ANALYST   | 7566 | 1987-07-13 | 3000 | NULL |     20 |
+|  7839 | KING   | PRESIDENT | NULL | 1981-10-17 | 5000 | NULL |     10 |
+|  7844 | TURNER | SALESMAN  | 7698 | 1981-09-08 | 1500 |    0 |     30 |
+|  7876 | ADAMS  | CLERK     | 7788 | 1987-07-13 | 1100 | NULL |     20 |
+|  7900 | JAMES  | CLERK     | 7698 | 1981-12-03 |  950 | NULL |     30 |
+|  7902 | FORD   | ANALYST   | 7566 | 1981-12-03 | 3000 | NULL |     20 |
+|  7934 | MILLER | CLERK     | 7782 | 1982-01-23 | 1300 | NULL |     10 |
++-------+--------+-----------+------+------------+------+------+--------+
+14 rows in set (0.00 sec)
+
+mysql> select e.ename"Employee",d.dname"Dept",m.ename"Manager"
+    -> from emp e inner join dept d on e.deptno=d.deptno
+    -> left outer join emp m on e.mgr=m.empno;
++----------+------------+---------+
+| Employee | Dept       | Manager |
++----------+------------+---------+
+| CLARK    | ACCOUNTING | KING    |
+| KING     | ACCOUNTING | NULL    |
+| MILLER   | ACCOUNTING | CLARK   |
+| SMITH    | RESEARCH   | FORD    |
+| JONES    | RESEARCH   | KING    |
+| SCOTT    | RESEARCH   | JONES   |
+| ADAMS    | RESEARCH   | SCOTT   |
+| FORD     | RESEARCH   | JONES   |
+| ALLEN    | SALES      | BLAKE   |
+| WARD     | SALES      | BLAKE   |
+| MARTIN   | SALES      | BLAKE   |
+| BLAKE    | SALES      | KING    |
+| TURNER   | SALES      | BLAKE   |
+| JAMES    | SALES      | BLAKE   |
++----------+------------+---------+
+14 rows in set (0.00 sec)
+
+mysql> create view vw_emp_dept_1 as
+    -> select e.ename"Employee",d.dname"Dept",m.ename"Manager"
+    -> from emp e inner join dept d on e.deptno=d.deptno
+    -> left outer join emp m on e.mgr=m.empno;
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> select * form vw_emp_dept_1;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that
+corresponds to your MySQL server version for the right syntax to use near 'form
+vw_emp_dept_1' at line 1
+mysql> select * from vw_emp_dept_1;
++----------+------------+---------+
+| Employee | Dept       | Manager |
++----------+------------+---------+
+| CLARK    | ACCOUNTING | KING    |
+| KING     | ACCOUNTING | NULL    |
+| MILLER   | ACCOUNTING | CLARK   |
+| SMITH    | RESEARCH   | FORD    |
+| JONES    | RESEARCH   | KING    |
+| SCOTT    | RESEARCH   | JONES   |
+| ADAMS    | RESEARCH   | SCOTT   |
+| FORD     | RESEARCH   | JONES   |
+| ALLEN    | SALES      | BLAKE   |
+| WARD     | SALES      | BLAKE   |
+| MARTIN   | SALES      | BLAKE   |
+| BLAKE    | SALES      | KING    |
+| TURNER   | SALES      | BLAKE   |
+| JAMES    | SALES      | BLAKE   |
++----------+------------+---------+
+14 rows in set (0.00 sec)
+
+mysql>
